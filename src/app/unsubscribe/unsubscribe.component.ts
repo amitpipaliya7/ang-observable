@@ -12,10 +12,10 @@ export class UnsubscribeComponent {
 
   counter = interval(1000)
 
-  subscribe; 
+  subscribe 
 
   subscribeBtn(){
-    let subscribe =  this.counter.subscribe((val)=>{
+    this.subscribe =  this.counter.subscribe((val)=>{
       this.data.push(val)
     })
   }
